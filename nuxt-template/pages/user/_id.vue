@@ -28,9 +28,7 @@
         error({statusCode: 404, message: 'err test'})
         redirect('/user')
       }
-      return {
-        testData: obj
-      }
+      return {testData: obj}
     },
     computed: mapState([
       'count'

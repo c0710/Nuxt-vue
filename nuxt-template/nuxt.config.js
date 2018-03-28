@@ -17,12 +17,18 @@ module.exports = {
   ** Customize the progress bar color
   */
   router: {
-    middleware: 'auth'
+    middleware: ['auth', 'visits', 'user-agent']
   },
   /*
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+  /*
+  ** plugins configuration
+  */
+  plugins: [
+    {src: '~/plugins/vue-notifications', ssr: false}
+  ],
   /*
   ** Build configuration
   */
